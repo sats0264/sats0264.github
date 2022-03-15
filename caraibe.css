@@ -1,0 +1,75 @@
+body{
+    background-image: url(cara.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgb(255, 255, 255);
+    color: rgb(36, 33, 33);
+    font-size: 17px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#head{
+    background: rgb(64, 100, 216) ;
+    color: black;
+    margin: auto;
+}
+.header{
+    height: 80px;
+    margin: 10px;
+    opacity: 40%;   
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-content: center;
+}
+ul li a{
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+}
+ul li a:hover{
+    color: rgb(238, 6, 6); 
+    text-decoration: none;
+}
+
+.menu li{
+    float: left;
+    padding: 30px;
+    opacity: 60%;
+    display: inline;
+}
+.menu li a{
+    text-decoration: none;
+}
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+#toph{
+   width: 720px;
+   overflow: hidden;
+   justify-content: center;
+   border: 2px solid rgb(2, 110, 110);
+}
+.img{
+    display: flex;
+    animation-duration: 15s;
+    animation-name: mestoph;
+    animation-iteration-count: infinite;
+}   
+@keyframes mestoph {
+    0%{transform: translateX(0);} 
+    20%{transform: translateX(-720px);} 
+    40%{transform: translateX(-1440px);}
+    60%{transform: translateX(-2160px);}  
+    80%{transform: translateX(-2880px);}  
+    100%{transform: translateX(0);}  
+}

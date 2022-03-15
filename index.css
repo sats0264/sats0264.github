@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0 ,0 ,0 , 0.6)), url(fondindex.jpg);
+    background-repeat: no-repeat;
+    background-position: flex;
+    background-size: 100%
+}
+#head{
+    background: rgb(64, 100, 216) ;
+    color: black;
+    margin: auto;
+}
+.header{
+    height: 80px;
+    margin: 10px;
+    opacity: 40%;   
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-content: center;
+}
+ul li a{
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+}
+ul li a:hover{
+    color: rgb(238, 6, 6); 
+    text-decoration: none;
+}
+.menu li{
+    float: left;
+    padding: 30px;
+    opacity: 60%;
+    display: inline;
+}
+.menu li a{
+    text-decoration: none;
+}
+form{
+    padding: 35px;
+    text-align: right;
+}
+input[type="search"]{
+    font-size: 15px;
+}
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+#toph{
+   width: 720px;
+   overflow: hidden;
+   justify-content: center;
+   border: 2px solid rgb(2, 110, 110);
+}
+.img{
+    display: flex;
+    animation-duration: 15s;
+    animation-name: mestoph;
+    animation-iteration-count: infinite;
+}   
+@keyframes mestoph {
+    0%{transform: translateX(0);} 
+    20%{transform: translateX(-720px);} 
+    40%{transform: translateX(-1440px);}
+    60%{transform: translateX(-2160px);}  
+    80%{transform: translateX(-2880px);}  
+    100%{transform: translateX(0);}  
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: inherit;
+}
